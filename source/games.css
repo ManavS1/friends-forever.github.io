@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+}
+body{
+    background-color: #000000;
+}
+
+/* main-container */
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color:  #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_box{
+    border: 4px solid #00FFFF;
+    height: 480px;
+    width: 310px;
+    border-radius: 25px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    flex-direction: column;
+    padding: 1%;
+}
+.small_box1{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 15%;
+}
+.small_box1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box2{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 15%;
+}
+.small_box2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box3{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 9.5%;
+}
+.small_box3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box4{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 9.5%;
+}
+.small_box4 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box5{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 9.5%;
+}
+.small_box5 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box6{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 9.5%;
+}
+.small_box6 a{
+    color: white;
+    text-decoration: none;
+}
+
+.small_box7{
+    border: 3px solid #00FFFF;
+    background: url(../../media/background_gif.gif);
+    font-size: 25px;
+    border-radius: 25px;
+    padding:2% 9.5%;
+}
+.small_box7 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* All hover properties */
+
+.big_box:hover, .small_box1:hover, .small_box2:hover, .small_box3:hover, .small_box4:hover, .small_box5:hover, .small_box6:hover, .small_box7:hover{
+    border-color: #00FFFF;
+    box-shadow: 0 0 40px #00FFFF; /*you can use inset after color to get shadow inside of boxes*/
+}
+.big_box, .small_box1, .small_box2, .small_box3:hover, .small_box4:hover, .small_box5:hover, .small_box6:hover, .small_box7:hover{
+    transition: 0.3S ease-in-out;
+}
