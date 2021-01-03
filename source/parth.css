@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* ----------------------------parent div mainn----------------------------- */
+.mainn {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------- Second parent div flip-card------------------------ */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+/* ---------------------Third parent div flip-card-inner-----------------=----- */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border: 5px solid #00FFFF;
+    border-radius: 15px;
+    /* transition */
+    /* transition: 0.3S ease-in-out; */
+}
+
+/* --------------------------------Flip-card-front------------------------------- */
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    /* color: black; */
+}
+
+.flip-card-front .imgg {
+    background: url(../img_vid/demo.jpg) no-repeat;
+    border-radius: 9px;
+    background-size: cover;
+    height: 90%;
+}
+
+/* --------------------------------Flip-card-back------------------------------- */
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .text {
+    width: 100%;
+    height: 89%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid burlywood; */
+}
+
+.flip-card-back .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flip-card-back .icons a {
+    color: white;
+}
+
+.flip-card-back .text #special {
+    color: red;
+    font-size: 20px;
+}
+
+/* -----------------------------------others-------------------------------------- */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/*---------------------------------- All hover properties----------------------------- */
+
+.flip-card-back .icons a:hover {
+    color: #00FFFF;
+}
+
+.flip-card-inner:hover {
+    box-shadow: 0 0 40px #00FFFF;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
